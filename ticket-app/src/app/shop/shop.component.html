@@ -1,0 +1,85 @@
+
+
+<!-- CONTENT AREA --> 
+
+  <article class="wrapper">
+  
+  
+                  <section class="wrapper sec-space">
+                      <!-- Single Product Starts -->
+                      <div class="container">
+                          <div class="row">
+                              <!-- Products Sidebar Starts --> 
+                              <aside class="prod-sidebar col-sm-4 col-md-3">
+                                  <div class="widget-wrap"> 
+                                      <h2 class="widget-title"> NEW OFFERS </h2>
+                                      <div class="widget-content">
+                                          <img src="https://farm4.staticflickr.com/3892/14533228286_84b6a3fd18_b.jpg" height="190px" width="100%">
+                                      </div>
+                                  </div>
+                                  <div class="widget-wrap"> 
+                                    <h2 class="widget-title"> NEW OFFERS </h2>
+                                    <div class="widget-content">
+                                        <img src="https://cdn7.staztic.com/app/a/2596/2596493/dubai-live-wallpapers-3-1-s-307x512.jpg" height="120px" width="100%">
+                                    </div>
+                                </div>
+                                <div class="widget-wrap"> 
+                                  <h2 class="widget-title"> NEW OFFERS </h2>
+                                  <div class="widget-content">
+                                      <img src="https://farm4.staticflickr.com/3892/14533228286_84b6a3fd18_b.jpg" height="120px" width="100%">
+                                  </div>
+                              </div>
+  
+                                 
+  
+                                  
+                              </aside>    
+                              <!-- Products Sidebar Ends --> 
+  
+                              <!-- Products Categories Starts --> 
+                              <div class="col-md-9 col-sm-8 categories">
+                                    
+                                  <div class="tab-content">
+  
+                                      <!-- Product Grid View Starts -->
+                                      <div id="grid-view" class="tab-pane fade active in" role="tabpanel">
+                                          <div class="row">
+                                              <div *ngFor="let AllProduct of AllProducts" class="col-sm-6 col-lg-4">
+                                                    <div class="product-item">
+                                                    <div class="product-image">
+                                                            <a href="#" class="img"> 
+                                                                    <img src="{{ AllProduct.images[0] }}" alt="" /> 
+                                                                    <span class="product-hover">
+                                                                        <img alt="" src="{{ AllProduct.images[1] }}">          
+                                                                    </span>
+                                                            </a>
+
+                                                    </div>
+                                                    <div class="product-content">
+                                                            <h2 class="product-title"> <a href="#">{{ AllProduct.productTitle }}</a> </h2>
+                                                            <span class="price"> <b>${{ AllProduct.price }}</b> <del></del> </span>
+                                                            <div class="rating">          
+                                                                    {{ AllProduct.date }}                                              
+                                                            </div>
+                                                            <div class="product-links"> 
+                                                                <a routerLink="/productdetails" class="add-to-cart"> <span> Order Now </span> <i class="icon_cart_alt"></i> </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                              </div>
+                                            </div>
+                                      </div>
+                                      <!-- Product Grid View Ends -->
+  
+                                    </div>
+  
+                              </div>
+                              <!-- Products Description Starts --> 
+                          </div>
+                      </div>
+                      <!-- / Single Product Ends -->
+                  </section>
+  
+              </article>
+              <!-- / CONTENT AREA -->
+           

@@ -1,0 +1,7 @@
+.content-wrapper
+{
+    widows: 100% !important;
+}
+.form-control, .tt-hint, .tt-query, .typeahead{
+    display: initial !important;
+}
